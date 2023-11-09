@@ -38,3 +38,8 @@ git reset --hard 版本号
 第二天早上就后悔了，想恢复到新版本怎么办？找不到新版本的commit id怎么办？
 在Git中，总是有后悔药可以吃的。当你用$ git reset --hard HEAD^回退到add distributed版本时，
 再想恢复到append GPL，就必须找到append GPL的commit id。Git提供了一个命令git reflog用来记录你的每一次命令：
+
+第一次修改 -> git add -> 第二次修改 -> git commit
+你看，我们前面讲了，Git管理的是修改，当你用git add命令后，在工作区的第一次修改被放入暂存区，
+准备提交，但是，在工作区的第二次修改并没有放入暂存区，所以，git commit只负责把暂存区的修改提交了，
+也就是第一次的修改被提交了，第二次的修改不会被提交。
