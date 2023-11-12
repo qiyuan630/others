@@ -53,3 +53,5 @@ git rm filename 这是一种直接删除文件的方式，如果删除之后直�
 
 添加远程仓库地址git remote add origin git
 更改远程仓库的地址git remote set-url origin 新地址
+
+完成链接git push origin master
