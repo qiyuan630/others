@@ -50,3 +50,6 @@ git reset --hard 版本号
 如果上传到暂存区，我们可以使用git restore --staged filename
 
 git rm filename 这是一种直接删除文件的方式，如果删除之后直接commit那么就是直接删除了，如果没有commit，那么我们可以restore
+
+添加远程仓库地址git remote add origin git
+更改远程仓库的地址git remote set-url origin 新地址
