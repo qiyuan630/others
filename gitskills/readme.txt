@@ -57,3 +57,4 @@ git rm filename 这是一种直接删除文件的方式，如果删除之后直�
 完成链接git push origin master
 查看远程库链接git remote -v
 删除远程库 git remote rm origin 
+这一部分结束了
