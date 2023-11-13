@@ -91,3 +91,15 @@ git merge --no-ff -m""分支     这个是用来禁用fast forward
 git stash  可以将当前状态的工作区和暂存区都存储起来
 git stash apply 可以恢复状态，git stash drop删除状态。
 git stash pop 回复状态并且把stash 的内容删除
+
+git ls-files --with-tree=HEAD这个命令可以看当前状态下的文件夹及文件夹名称
+预览要删除的文件夹文件git rm -r -n --cached 文件/文件夹名称
+删除文件夹git rm -r --cached 文件/文件夹名称
+
+现在，你的小伙伴要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支：
+git checkout -b dev origin/dev
+
+
+现在我们对这一部分学习告一段落已经足够我们使用了
+我们学习到https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320中的多人协作部分
+由于我们还停留在个人使用层面，故到这里告一段落
