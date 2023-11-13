@@ -63,3 +63,31 @@ git rm filename 这是一种直接删除文件的方式，如果删除之后直�
 在使用git clone 远程仓库时，要注意首先要完成密钥链接，就是远端和本地密钥链接。ssh-keygen -t rsa -C"2050157259@qq.com"
 用ssh -T git@gitee.com这个来确认是否链接成功
 远程克隆代码git clone git@github.com:michaelliao/gitskills.git
+
+git checkout -b dev  这里的效果和git switch -c dev是相同的
+与以下代码效果相同
+git branch dev
+git checkout dev    
+这里可以进行正常的添加和提交工作。
+
+完成了dev分支下的更改之后，可以转换到master分支
+
+可以将dev分支合并到master分支上：
+git merge dev
+
+删除dev分支 git branch -d dev
+
+准备新的feature1分支，继续我们的新分支开发：
+git switch -c featurel
+git add readme.txt
+切换到master分支
+git switch master
+
+删除featurel分支：git branch -d featurel
+
+新建并切换分支到git switch -c dev
+git merge --no-ff -m""分支     这个是用来禁用fast forward
+
+git stash  可以将当前状态的工作区和暂存区都存储起来
+git stash apply 可以恢复状态，git stash drop删除状态。
+git stash pop 回复状态并且把stash 的内容删除
